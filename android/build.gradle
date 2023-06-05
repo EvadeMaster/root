@@ -4,19 +4,19 @@ version '1.0'
 buildscript {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
         maven { url 'https://jitpack.io' }
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.5.4'
+        classpath 'com.android.tools.build:gradle:7.4.2'
     }
 }
 
 rootProject.allprojects {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
         maven { url 'https://jitpack.io' }
     }
 }
@@ -41,7 +41,7 @@ android {
 }
 
 dependencies{
-    def libsuVersion = '5.0.2'
+    def libsuVersion = '5.1.0'
     implementation "com.github.topjohnwu.libsu:core:${libsuVersion}"
     implementation files('lib/RootTools.jar')
 }
