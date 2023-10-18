@@ -42,7 +42,7 @@ android {
 }
 
 dependencies{
-    def libsuVersion = '5.2.0'
+    def libsuVersion = '5.2.1'
     implementation "com.github.topjohnwu.libsu:core:${libsuVersion}"
     implementation files('lib/RootTools.jar')
 }
